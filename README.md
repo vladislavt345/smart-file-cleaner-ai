@@ -23,7 +23,7 @@ Run the application with the command:
 
 ```bash
 python main.py
-````
+```
 
 ### Main steps:
 
