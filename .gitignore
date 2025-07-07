@@ -1,0 +1,10 @@
+# pycharm
+.idea
+
+# python
+.venv
+__pycache__
+.pytest_cache/
+.test/
+.har_and_cookies/
+.temp_data/
