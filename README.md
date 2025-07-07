@@ -6,14 +6,14 @@ SmartFileCleaner is a graphical application for analyzing and safely deleting fi
 
 ## Features
 
-- Select multiple folders for analysis
-- Automatic collection of folder contents
-- Intelligent analysis powered by GPT-4
-- Categorization of files into recommended for deletion and for keeping
-- View detailed information about each file/folder
-- Bulk selection and deletion of files with confirmation
-- Intuitive and responsive GUI built with Tkinter
-- Runs in a separate thread for smooth interface performance
+* Select multiple folders for analysis
+* Automatic collection of folder contents
+* Intelligent analysis powered by GPT-4 through [gpt4free](https://github.com/xtekky/gpt4free) API client
+* Categorization of files into recommended for deletion and for keeping
+* View detailed information about each file/folder
+* Bulk selection and deletion of files with confirmation
+* Intuitive and responsive GUI built with Tkinter
+* Runs in a separate thread for smooth interface performance
 
 ---
 
@@ -38,6 +38,33 @@ python main.py
 
 * `main.py` — application entry point
 * `file_manager.py` — file and folder management logic
-* `gpt_client.py` — interaction with the GPT API
+* `gpt_client.py` — interaction with the GPT API via gpt4free
 * `gui/` — interface modules (main window, status bar, file lists, etc.)
-* `config/` — configuration files and saved data
+* `temp_data/` — configuration files and saved data
+
+---
+
+## Requirements
+
+* Python 3.10+
+* `g4f[all]` (GPT4Free client library)
+
+Install dependencies with:
+
+```bash
+pip install -U g4f[all]
+```
+
+---
+
+## About GPT4Free
+
+This project uses the [gpt4free](https://github.com/xtekky/gpt4free) library written by @xtekky to interact with various free GPT providers in a unified way.
+
+**Important legal notice from GPT4Free:**
+
+By using GPT4Free, you agree to its [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html). The author is not responsible for usage or forks, and you should comply with the license terms.
+
+GPT4Free serves as a Proof of Concept (PoC) demonstrating multi-provider requests with load balancing and timeout controls.
+
+For more details, updates, and support, please visit the [official GPT4Free repository](https://github.com/xtekky/gpt4free).
